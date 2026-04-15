@@ -23,6 +23,7 @@ import {
   asTournament,
   contentTitle,
   itemLabel,
+  urlToContentId,
   type ContentListRow,
 } from "@/src/lib/contentTypes";
 import { getCountry } from "@/src/lib/countries";
@@ -58,9 +59,10 @@ const PALETTE = [
 export default function ResultsPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ type: string; slug: string }>;
 }) {
-  const { id } = use(params);
+  const { type, slug } = use(params);
+  const id = urlToContentId(type, slug);
   const { locale, t } = useLocale();
 
   const [content, setContent] = useState<ContentListRow | null>(null);
@@ -144,7 +146,6 @@ export default function ResultsPage({
     return Array.from(set).sort();
   }, [votes, filterMode]);
 
-  const totalVotes = votes.length;
   const filteredTotal = filteredVotes.length;
   const topPick = byChoice[0]?.name ?? "—";
 

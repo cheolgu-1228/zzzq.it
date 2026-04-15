@@ -1,0 +1,80 @@
+{
+  "tournament-superpower": {
+    "en": {
+      "title": "Steal One Superpower",
+      "description": "Only one can win. Choose."
+    }
+  },
+  "tournament-movie-snack": {
+    "en": {
+      "title": "Ultimate Movie Snack",
+      "description": "Pick before the movie starts."
+    }
+  },
+  "tournament-vacation-destination": {
+    "en": {
+      "title": "Your Dream Escape",
+      "description": "Tomorrow you leave. Where?"
+    }
+  },
+  "tournament-worst-wake-up": {
+    "en": {
+      "title": "Worst Morning Ever",
+      "description": "One will ruin your whole day."
+    }
+  },
+  "tournament-one-food-forever": {
+    "en": {
+      "title": "One Food. Forever.",
+      "description": "No take-backs. Ever."
+    }
+  },
+  "tournament-useless-talent": {
+    "en": {
+      "title": "Dumbest Flex Ever",
+      "description": "Totally useless. Totally iconic."
+    }
+  },
+  "versus-coke-pepsi": {
+    "en": {
+      "title": "Coke or Pepsi?",
+      "description": "Pick a side. For life."
+    }
+  },
+  "poll-best-pizza-topping": {
+    "en": {
+      "title": "The One True Topping",
+      "description": "Your pizza deal-breaker."
+    }
+  },
+  "ranking-seasons": {
+    "en": {
+      "title": "Rank the Seasons",
+      "description": "Drag. Reveal your truth."
+    }
+  },
+  "tier-list-breakfast": {
+    "en": {
+      "title": "Breakfast Tier List",
+      "description": "S tier or trash?"
+    }
+  },
+  "rate-aesthetic-rooms": {
+    "en": {
+      "title": "Rate the Vibes",
+      "description": "1-5 stars. Zero mercy."
+    }
+  },
+  "would-you-rather-hard-choices": {
+    "en": {
+      "title": "Impossible Choices",
+      "description": "You have to pick. Sorry."
+    }
+  },
+  "matching-capital-country": {
+    "en": {
+      "title": "Capital Match",
+      "description": "Think you know the world?"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "Chọn, bình chọn, xem mọi người đã chọn thế nào."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "contents": "Nội dung"
+  },
+  "theme": {
+    "cute": "Dễ thương",
+    "digital": "Kỹ thuật số",
+    "gaming": "Game"
+  },
+  "home": {
+    "title": "Bắt đầu thôi!",
+    "subtitle": "Cho tụi mình biết chút về bạn để kết quả được cá nhân hóa nhé.",
+    "country": "Quốc gia",
+    "gender": "Giới tính",
+    "age": "Nhóm tuổi",
+    "nickname": "Biệt danh",
+    "nicknamePlaceholder": "ví dụ: zzzQ",
+    "start": "Bắt đầu",
+    "selectCountry": "Chọn quốc gia"
+  },
+  "gender": {
+    "male": "Nam",
+    "female": "Nữ",
+    "other": "Khác"
+  },
+  "age": {
+    "10s": "10-19",
+    "20s": "20-29",
+    "30s": "30-39",
+    "40s": "40-49",
+    "50s+": "50+"
+  },
+  "contents": {
+    "title": "Nội dung",
+    "join": "Tham gia",
+    "results": "Kết quả"
+  },
+  "tournament": {
+    "round16": "Vòng 1/16",
+    "quarter": "Tứ kết",
+    "semi": "Bán kết",
+    "final": "Chung kết",
+    "pickOne": "Chọn một",
+    "winner": "Quán quân",
+    "playAgain": "Chơi lại",
+    "viewResults": "Xem kết quả toàn cầu",
+    "progress": "Trận đấu"
+  },
+  "results": {
+    "title": "Kết quả Toàn cầu",
+    "totalVotes": "Tổng lượt bình chọn",
+    "topPick": "Lựa chọn hàng đầu",
+    "byCountry": "Theo quốc gia",
+    "byRound": "Tỷ lệ thắng theo vòng",
+    "recent": "Bình chọn gần đây",
+    "comments": "Bình luận",
+    "writeComment": "Viết bình luận...",
+    "send": "Gửi",
+    "empty": "Chưa có dữ liệu. Hãy là người đầu tiên!"
+  }
+}

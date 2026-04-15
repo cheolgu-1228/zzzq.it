@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "골라봐, 투표해봐, 전 세계 사람들의 선택을 확인해봐."
+  },
+  "nav": {
+    "home": "홈",
+    "contents": "콘텐츠"
+  },
+  "theme": {
+    "cute": "귀여운",
+    "digital": "디지털",
+    "gaming": "게임"
+  },
+  "home": {
+    "title": "시작하기 전에",
+    "subtitle": "결과를 맞춤 설정할 수 있도록 잠시 당신에 대해 알려주세요.",
+    "country": "국가",
+    "gender": "성별",
+    "age": "연령대",
+    "nickname": "닉네임",
+    "nicknamePlaceholder": "예: zzzQ",
+    "start": "시작하기",
+    "selectCountry": "국가 선택"
+  },
+  "gender": {
+    "male": "남성",
+    "female": "여성",
+    "other": "기타"
+  },
+  "age": {
+    "10s": "10대",
+    "20s": "20대",
+    "30s": "30대",
+    "40s": "40대",
+    "50s+": "50대 이상"
+  },
+  "contents": {
+    "title": "콘텐츠",
+    "join": "참여하기",
+    "results": "결과 보기"
+  },
+  "tournament": {
+    "round16": "16강",
+    "quarter": "8강",
+    "semi": "4강",
+    "final": "결승",
+    "pickOne": "하나를 골라봐",
+    "winner": "우승자",
+    "playAgain": "다시 플레이하기",
+    "viewResults": "전 세계 결과 보기",
+    "progress": "대결"
+  },
+  "results": {
+    "title": "전 세계 결과",
+    "totalVotes": "총 투표 수",
+    "topPick": "가장 많이 뽑힌 것",
+    "byCountry": "국가별 결과",
+    "byRound": "라운드별 승률",
+    "recent": "최근 투표",
+    "comments": "댓글",
+    "writeComment": "댓글을 입력하세요...",
+    "send": "보내기",
+    "empty": "아직 데이터가 없어요. 가장 먼저 되어보세요!"
+  }
+}

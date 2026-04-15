@@ -124,7 +124,8 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fontVars} h-full antialiased`}
+      className={`${fontVars} antialiased`}
+      style={{ height: "100%" }}
     >
       <head>
         <ThemeScript />
@@ -139,16 +140,32 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className="min-h-full flex flex-col">
+      {/*
+        뷰포트 고정 레이아웃:
+        - body: 정확히 뷰포트 높이 (h-dvh) + 외부 스크롤 차단
+        - header/footer: 고정 높이
+        - main: flex-1 min-h-0 overflow-y-auto → 내용이 길면 main 내부에서만 스크롤
+        - contents 페이지는 h-full로 viewport에 딱 맞춰서 스크롤 없이 표시
+        - home/tournament/results 페이지는 높이가 길어지면 main 내부 스크롤
+      */}
+      <body
+        className="flex flex-col overflow-hidden"
+        style={{ height: "100dvh" }}
+      >
         <ThemeProvider>
           <LocaleProvider>
             <Header />
-            <main className="flex-1 w-full">{children}</main>
+            <main className="flex-1 min-h-0 w-full overflow-y-auto">
+              {children}
+            </main>
             <footer
-              className="w-full py-6 text-center text-xs"
-              style={{ color: "var(--fg-muted)" }}
+              className="w-full py-2 text-center text-[11px] tracking-wide shrink-0"
+              style={{
+                color: "var(--fg-muted)",
+                borderTop: "1px solid var(--card-border)",
+              }}
             >
-              © {new Date().getFullYear()} zzzQ.it
+              ⓒ 2021. zzzQ All rights reserved.
             </footer>
           </LocaleProvider>
         </ThemeProvider>

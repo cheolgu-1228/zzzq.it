@@ -227,6 +227,15 @@ html[lang="ko"] h3, html[lang="ja"] h3, html[lang="zh"] h3 {
   outline-offset: 2px;
 }
 
+/* 가로 스크롤 박스에서 스크롤바 감추기 (기능은 유지) */
+.zq-no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.zq-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* =========================================================
    공통 애니메이션 (토너먼트 Fun 요소)
    ========================================================= */

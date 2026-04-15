@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   asTournament,
+  contentResultsHref,
   itemLabel,
   type CandidateItem,
   type Content,
@@ -44,11 +45,38 @@ const ROUND_LABEL_KEY: Record<string, string> = {
   final: "tournament.final",
 };
 
+// "되돌리기" 버튼 라벨 — 짧은 텍스트라 i18n.ts 추가 없이 인라인 매핑
+const UNDO_LABEL: Record<string, string> = {
+  en: "Undo",
+  ko: "되돌리기",
+  ja: "戻る",
+  zh: "撤销",
+  es: "Deshacer",
+  pt: "Desfazer",
+  fr: "Annuler",
+  de: "Rückgängig",
+  ru: "Отменить",
+  hi: "पूर्ववत",
+  ar: "تراجع",
+  id: "Urungkan",
+  vi: "Hoàn tác",
+  tr: "Geri al",
+  th: "ย้อนกลับ",
+  it: "Annulla",
+  pl: "Cofnij",
+  nl: "Ongedaan",
+  bn: "পূর্বাবস্থা",
+};
+
 export function TournamentTemplate({ content }: { content: Content }) {
   const router = useRouter();
   const { locale, t } = useLocale();
 
-  const items = useMemo(() => asTournament(content).items, [content]);
+  const tournament = useMemo(() => asTournament(content), [content]);
+  const items = tournament.items;
+  const features = tournament.features ?? [];
+  const showImages = features.includes("show_images");
+  const blindLabels = features.includes("blind_labels");
   const byKey = useMemo(
     () => new Map(items.map((it) => [it.key, it])),
     [items],
@@ -182,6 +210,73 @@ export function TournamentTemplate({ content }: { content: Content }) {
     })();
   }, [championKey, saved, content.id, rounds]);
 
+  // 되돌리기 — 한 경기 전으로 복귀하여 다시 선택 가능
+  // 케이스 3가지:
+  // 1) 현재 라운드에서 이전 매치가 있으면 그 매치의 winnerKey 지우고 커서 이동
+  // 2) 현재가 라운드 첫 매치(matchIdx=0)인데 이전 라운드가 있으면 → 이전 라운드 마지막 매치로 복귀 + 현재 라운드 제거
+  // 3) 우승 확정 상태면 → championKey 해제 + 결승전 매치로 복귀
+  const canUndo =
+    !pickedSide &&
+    (championKey !== null ||
+      currentMatchIdx > 0 ||
+      currentRoundIdx > 0 ||
+      (rounds[0]?.matches[0]?.winnerKey !== undefined));
+
+  const handleUndo = () => {
+    if (pickedSide) return; // 애니메이션 중 차단
+    // 3) 우승 확정 → 결승전 매치로 복귀
+    if (championKey) {
+      const finalIdx = rounds.length - 1;
+      setRounds((prev) => {
+        const next = prev.map((r) => ({
+          ...r,
+          matches: r.matches.map((m) => ({ ...m })),
+        }));
+        const finalMatch = next[finalIdx]?.matches?.[0];
+        if (finalMatch) finalMatch.winnerKey = undefined;
+        return next;
+      });
+      setCurrentRoundIdx(finalIdx);
+      setCurrentMatchIdx(0);
+      setPickedSide(null);
+      setChampionKey(null);
+      setSaved(false);
+      return;
+    }
+    // 1) 같은 라운드 내 한 칸 뒤로
+    if (currentMatchIdx > 0) {
+      const prevMatchIdx = currentMatchIdx - 1;
+      setRounds((prev) => {
+        const next = prev.map((r) => ({
+          ...r,
+          matches: r.matches.map((m) => ({ ...m })),
+        }));
+        next[currentRoundIdx].matches[prevMatchIdx].winnerKey = undefined;
+        return next;
+      });
+      setCurrentMatchIdx(prevMatchIdx);
+      setPickedSide(null);
+      return;
+    }
+    // 2) 이전 라운드로 복귀 + 현재(방금 생성된) 라운드 제거
+    if (currentRoundIdx > 0) {
+      const prevRoundIdx = currentRoundIdx - 1;
+      const prevLastIdx = rounds[prevRoundIdx].matches.length - 1;
+      setRounds((prev) => {
+        // 현재 라운드(이전 라운드 결과로 막 만들어진) 제거
+        const next = prev.slice(0, prevRoundIdx + 1).map((r) => ({
+          ...r,
+          matches: r.matches.map((m) => ({ ...m })),
+        }));
+        next[prevRoundIdx].matches[prevLastIdx].winnerKey = undefined;
+        return next;
+      });
+      setCurrentRoundIdx(prevRoundIdx);
+      setCurrentMatchIdx(prevLastIdx);
+      setPickedSide(null);
+    }
+  };
+
   // 미니맵 진행률
   const miniMap = useMemo(
     () =>
@@ -226,7 +321,7 @@ export function TournamentTemplate({ content }: { content: Content }) {
         <div className="flex flex-col sm:flex-row gap-3 w-full max-w-sm mt-4">
           <button
             type="button"
-            onClick={() => router.push(`/contents/${content.id}/results`)}
+            onClick={() => router.push(contentResultsHref(content))}
             className="flex-1 h-12 font-bold"
             style={{
               background: "var(--accent)",
@@ -275,19 +370,41 @@ export function TournamentTemplate({ content }: { content: Content }) {
   return (
     <div className="max-w-xl mx-auto px-4 py-6 sm:py-10 flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <span
             className="text-xs font-bold uppercase tracking-widest"
             style={{ color: "var(--accent)" }}
           >
             {roundLabel}
           </span>
-          <span
-            className="text-xs font-semibold"
-            style={{ color: "var(--fg-muted)" }}
-          >
-            {t("tournament.progress")} {currentMatchIdx + 1}/{totalPicksInRound}
-          </span>
+          <div className="flex items-center gap-2">
+            <span
+              className="text-xs font-semibold"
+              style={{ color: "var(--fg-muted)" }}
+            >
+              {t("tournament.progress")} {currentMatchIdx + 1}/{totalPicksInRound}
+            </span>
+            {/* 되돌리기 버튼 — 시작 상태에서는 비활성 */}
+            <button
+              type="button"
+              onClick={handleUndo}
+              disabled={!canUndo}
+              className="h-7 px-2 inline-flex items-center gap-1 text-[11px] font-semibold transition-all disabled:opacity-40"
+              style={{
+                background: "var(--bg-soft)",
+                color: "var(--fg)",
+                border: "1px solid var(--card-border)",
+                borderRadius: 999,
+                cursor: canUndo ? "pointer" : "not-allowed",
+              }}
+              aria-label={UNDO_LABEL[locale] ?? UNDO_LABEL.en}
+            >
+              <span aria-hidden>↶</span>
+              <span className="hidden sm:inline">
+                {UNDO_LABEL[locale] ?? UNDO_LABEL.en}
+              </span>
+            </button>
+          </div>
         </div>
         <div className="flex gap-1.5">
           {miniMap.map((m, idx) => {
@@ -309,11 +426,63 @@ export function TournamentTemplate({ content }: { content: Content }) {
             );
           })}
         </div>
+
+        {/* 현재 라운드의 내 선택 히스토리 — 매치별 1칸씩, 고른 값 표시 */}
+        <div className="flex gap-1 overflow-x-auto -mx-1 px-1 pb-1">
+          {currentRound.matches.map((m, idx) => {
+            const isDone = idx < currentMatchIdx;
+            const isCurrent = idx === currentMatchIdx;
+            const winnerItem = m.winnerKey
+              ? byKey.get(m.winnerKey)
+              : undefined;
+            const text = winnerItem
+              ? blindLabels
+                ? "✓"
+                : itemLabel(winnerItem, locale)
+              : isCurrent
+                ? "…"
+                : "—";
+            return (
+              <div
+                key={idx}
+                className="shrink-0 flex items-center gap-1 h-6 px-2 text-[10px] font-semibold whitespace-nowrap transition-all"
+                style={{
+                  background: isDone
+                    ? "var(--accent)"
+                    : isCurrent
+                      ? "var(--bg-soft)"
+                      : "transparent",
+                  color: isDone
+                    ? "#fff"
+                    : isCurrent
+                      ? "var(--accent)"
+                      : "var(--fg-muted)",
+                  border: `1px solid ${
+                    isCurrent ? "var(--accent)" : "var(--card-border)"
+                  }`,
+                  borderRadius: 999,
+                  opacity: isDone || isCurrent ? 1 : 0.5,
+                  maxWidth: 120,
+                }}
+              >
+                <span
+                  className="opacity-60"
+                  style={{ fontSize: 9 }}
+                  aria-hidden
+                >
+                  {idx + 1}
+                </span>
+                <span className="truncate">{text}</span>
+              </div>
+            );
+          })}
+        </div>
       </header>
 
       <section className="flex flex-col items-center gap-4">
         <PickCard
-          label={itemLabel(currentMatch.a, locale)}
+          label={blindLabels ? "???" : itemLabel(currentMatch.a, locale)}
+          image={showImages ? currentMatch.a.image : undefined}
           side="a"
           picked={pickedSide}
           onPick={handlePick}
@@ -330,7 +499,8 @@ export function TournamentTemplate({ content }: { content: Content }) {
           VS
         </div>
         <PickCard
-          label={itemLabel(currentMatch.b, locale)}
+          label={blindLabels ? "???" : itemLabel(currentMatch.b, locale)}
+          image={showImages ? currentMatch.b.image : undefined}
           side="b"
           picked={pickedSide}
           onPick={handlePick}
@@ -350,12 +520,14 @@ export function TournamentTemplate({ content }: { content: Content }) {
 
 function PickCard({
   label,
+  image,
   side,
   picked,
   onPick,
   accent,
 }: {
   label: string;
+  image?: string;
   side: "a" | "b";
   picked: "a" | "b" | null;
   onPick: (s: "a" | "b") => void;
@@ -374,13 +546,16 @@ function PickCard({
       type="button"
       onClick={() => onPick(side)}
       disabled={picked !== null}
-      className={`w-full max-w-sm h-28 sm:h-32 px-4 text-lg sm:text-xl font-extrabold tracking-tight transition-transform ${cls}`}
+      className={`w-full max-w-sm h-28 sm:h-32 px-4 text-lg sm:text-xl font-extrabold tracking-tight transition-transform relative overflow-hidden flex items-center justify-center gap-3 ${cls}`}
       style={{
-        background: "var(--card)",
-        color: "var(--fg)",
+        background: image
+          ? `linear-gradient(to right, rgba(0,0,0,0.35), rgba(0,0,0,0.15)), url(${image}) center/cover`
+          : "var(--card)",
+        color: image ? "#fff" : "var(--fg)",
         border: `2px solid ${state === "picked" ? accent : "var(--card-border)"}`,
         borderRadius: "var(--radius)",
         boxShadow: state === "picked" ? "var(--glow)" : "var(--shadow-soft)",
+        textShadow: image ? "0 2px 8px rgba(0,0,0,0.6)" : "none",
       }}
     >
       {label}

@@ -1,0 +1,1016 @@
+{
+  "tournament-superpower": {
+    "en": {
+      "title": "Steal One Superpower",
+      "description": "Only one can win. Choose."
+    },
+    "ko": {
+      "title": "초능력 하나만",
+      "description": "하나만 고르세요."
+    },
+    "ja": {
+      "title": "超能力どれにする？",
+      "description": "一つだけ選べ！"
+    },
+    "fr": {
+      "title": "Pouvoir Ultime",
+      "description": "Un seul gagne. Choisis."
+    },
+    "es": {
+      "title": "Roba un superpoder",
+      "description": "Solo uno triunfa. ¿Tú?"
+    },
+    "de": {
+      "title": "Klau EINE Superkraft!",
+      "description": "Nur ein Sieger. Wähle klug!"
+    },
+    "ru": {
+      "title": "Укради суперсилу!",
+      "description": "Только один победитель. Выбери!"
+    },
+    "hi": {
+      "title": "एक महाशक्ति चुराओ",
+      "description": "जीतने वाले की है बारी!"
+    },
+    "id": {
+      "title": "Curi Kekuatan Impian!",
+      "description": "Satu pemenang. Pilih!"
+    },
+    "tr": {
+      "title": "Süper Güç Çal!",
+      "description": "Hangisi senin olsun? Karar ver!"
+    },
+    "th": {
+      "title": "แย่งพลังวิเศษ!",
+      "description": "เลือกเลย ใครจะเทพ?"
+    },
+    "it": {
+      "title": "Il Tuo Superpotere?",
+      "description": "Solo uno trionfa. Tu?"
+    },
+    "pl": {
+      "title": "Jedna supermoc. Kradniesz?",
+      "description": "Wygraj. Wybierz mądrze."
+    },
+    "nl": {
+      "title": "Kies je Superkracht!",
+      "description": "Slechts één wint. Ga ervoor!"
+    },
+    "bn": {
+      "title": "কোন ক্ষমতাটা নেবে?",
+      "description": "একজনই জিতবে। বেছে নাও।"
+    },
+    "pt": {
+      "title": "Roube um Superpoder!",
+      "description": "Só um vence. Escolha o seu!"
+    },
+    "ar": {
+      "title": "قوة خارقة واحدة؟",
+      "description": "اختر لتربح! الآن!"
+    },
+    "vi": {
+      "title": "Cướp Siêu Năng Lực!",
+      "description": "Chỉ một thắng. Chọn đi!"
+    },
+    "zh": {
+      "title": "只选一个超能力",
+      "description": "只有一个赢家,选吧。"
+    }
+  },
+  "tournament-movie-snack": {
+    "en": {
+      "title": "Ultimate Movie Snack",
+      "description": "Pick before the movie starts."
+    },
+    "ko": {
+      "title": "영화 간식 끝판왕",
+      "description": "영화 시작 전 선택!"
+    },
+    "ja": {
+      "title": "映画のお供は？",
+      "description": "映画前に決めろ！"
+    },
+    "fr": {
+      "title": "En-cas Cinéma?",
+      "description": "Choisis avant le film."
+    },
+    "es": {
+      "title": "El snack de cine definitivo",
+      "description": "Elige antes que empiece."
+    },
+    "de": {
+      "title": "DER Kino-Snack?",
+      "description": "Wähl ihn VOR dem Film!"
+    },
+    "ru": {
+      "title": "Снек для кино? Выбери!",
+      "description": "До начала фильма. Решай!"
+    },
+    "hi": {
+      "title": "मूवी का अल्टीमेट स्नैक",
+      "description": "फिल्म से पहले, चुन लो!"
+    },
+    "id": {
+      "title": "Camilan Nonton Terbaik",
+      "description": "Pilih sebelum film mulai."
+    },
+    "tr": {
+      "title": "En İyi Film Atıştırmalığı",
+      "description": "Film başlamadan seç!"
+    },
+    "th": {
+      "title": "สุดยอดขนมหนัง!",
+      "description": "เลือกก่อนหนังฉาย!"
+    },
+    "it": {
+      "title": "Snack da Film Perfetto",
+      "description": "Scegli prima del film!"
+    },
+    "pl": {
+      "title": "Filmowy hit. Twój wybór!",
+      "description": "Co jesz podczas seansu?"
+    },
+    "nl": {
+      "title": "Ultieme Bioscoopsnack?",
+      "description": "Kies vóór de film begint."
+    },
+    "bn": {
+      "title": "সেরা মুভি স্ন্যাক",
+      "description": "সিনেমা শুরুর আগে বাছুন।"
+    },
+    "pt": {
+      "title": "Lanche Perfeito Pro Filme!",
+      "description": "Escolha antes do filme começar."
+    },
+    "ar": {
+      "title": "أفضل سناك فيلم؟",
+      "description": "اختر قبل فوات الأوان!"
+    },
+    "vi": {
+      "title": "Snack Phim Đỉnh Nhất!",
+      "description": "Chọn trước khi phim chiếu!"
+    },
+    "zh": {
+      "title": "终极电影零食",
+      "description": "开场前快选一个。"
+    }
+  },
+  "tournament-vacation-destination": {
+    "en": {
+      "title": "Your Dream Escape",
+      "description": "Tomorrow you leave. Where?"
+    },
+    "ko": {
+      "title": "꿈의 휴가지",
+      "description": "내일 떠나요. 어디로?"
+    },
+    "ja": {
+      "title": "夢の逃避行先",
+      "description": "明日出発！どこ行く？"
+    },
+    "fr": {
+      "title": "Évasion Rêvée",
+      "description": "Tu pars demain. Où?"
+    },
+    "es": {
+      "title": "Tu escape soñado",
+      "description": "Mañana viajas. ¿A dónde?"
+    },
+    "de": {
+      "title": "Dein Traum-Urlaubsziel?",
+      "description": "Morgen geht's los. Wohin?"
+    },
+    "ru": {
+      "title": "Твой побег мечты",
+      "description": "Завтра вылетаешь. Куда?"
+    },
+    "hi": {
+      "title": "तुम्हारी ड्रीम वेकेशन",
+      "description": "कल निकलना है? चुनो!"
+    },
+    "id": {
+      "title": "Liburan Impianmu!",
+      "description": "Besok berangkat. Mau ke mana?"
+    },
+    "tr": {
+      "title": "Hayalindeki Kaçış Nereye?",
+      "description": "Yarın gidiyorsun. Nereye uçacaksın?"
+    },
+    "th": {
+      "title": "หนีไปไหนดี?",
+      "description": "พรุ่งนี้ไปเลย!"
+    },
+    "it": {
+      "title": "La Tua Fuga Ideale",
+      "description": "Parti domani. Destinazione?"
+    },
+    "pl": {
+      "title": "Wakacje marzeń? Gdzie lecisz?",
+      "description": "Jutro wylot. Wybierz miejsce!"
+    },
+    "nl": {
+      "title": "Jouw Droomvakantie!",
+      "description": "Morgen vertrek je. Waarheen?"
+    },
+    "bn": {
+      "title": "আপনার স্বপ্নের ছুটি",
+      "description": "কালই যাচ্ছেন। কোথায় যাবেন?"
+    },
+    "pt": {
+      "title": "Sua Fuga dos Sonhos!",
+      "description": "Amanhã você parte. Pra onde?"
+    },
+    "ar": {
+      "title": "وجهة أحلامك تنتظرك!",
+      "description": "غداً تسافر! أين تذهب؟"
+    },
+    "vi": {
+      "title": "Đi Trốn Thôi Nào!",
+      "description": "Mai đi rồi. Đi đâu?"
+    },
+    "zh": {
+      "title": "你的梦想逃离",
+      "description": "明天出发,去哪?"
+    }
+  },
+  "tournament-worst-wake-up": {
+    "en": {
+      "title": "Worst Morning Ever",
+      "description": "One will ruin your whole day."
+    },
+    "ko": {
+      "title": "최악의 아침",
+      "description": "하루 망치는 건 하나."
+    },
+    "ja": {
+      "title": "最悪の朝",
+      "description": "一日台無しにするのは？"
+    },
+    "fr": {
+      "title": "Matin Cauchemar",
+      "description": "Un te ruine la journée."
+    },
+    "es": {
+      "title": "La peor mañana",
+      "description": "Arruinará tu día entero."
+    },
+    "de": {
+      "title": "DER Albtraum-Morgen?",
+      "description": "Einer macht deinen Tag kaputt!"
+    },
+    "ru": {
+      "title": "Худшее утро в жизни",
+      "description": "Одно испортит весь день."
+    },
+    "hi": {
+      "title": "सबसे बुरी सुबह?",
+      "description": "एक दिन बर्बाद करेगा!"
+    },
+    "id": {
+      "title": "Pagi Terburukmu!",
+      "description": "Satu bikin harimu kacau."
+    },
+    "tr": {
+      "title": "En Kötü Sabah Uyanışı",
+      "description": "Günün mahvolacak. Hangisi?"
+    },
+    "th": {
+      "title": "ตื่นเช้าสุดแย่",
+      "description": "วันพังเพราะสิ่งนี้"
+    },
+    "it": {
+      "title": "Peggior Risveglio di Sempre",
+      "description": "Uno ti rovinerà la giornata."
+    },
+    "pl": {
+      "title": "Najgorszy poranek wszech czasów?",
+      "description": "Jeden zrujnuje dzień. Wybierz."
+    },
+    "nl": {
+      "title": "Slechtste Ochtend Ooit",
+      "description": "Eén verpest je dag."
+    },
+    "bn": {
+      "title": "সবচেয়ে বাজে সকাল",
+      "description": "একটা আপনার দিন নষ্ট করবে।"
+    },
+    "pt": {
+      "title": "Pior Acordar da Vida!",
+      "description": "Um vai estragar seu dia."
+    },
+    "ar": {
+      "title": "أسوأ صباح على الإطلاق؟",
+      "description": "واحد سيدمر يومك! اختر!"
+    },
+    "vi": {
+      "title": "Sáng Nào Thảm Họa?",
+      "description": "Hỏng cả ngày luôn!"
+    },
+    "zh": {
+      "title": "最糟糕的早晨",
+      "description": "一件事毁掉一整天。"
+    }
+  },
+  "tournament-one-food-forever": {
+    "en": {
+      "title": "One Food. Forever.",
+      "description": "No take-backs. Ever."
+    },
+    "ko": {
+      "title": "평생 음식 하나",
+      "description": "후회 없어야 함."
+    },
+    "ja": {
+      "title": "一生食うなら？",
+      "description": "後戻りはナシ！"
+    },
+    "fr": {
+      "title": "Un Plat. Toujours.",
+      "description": "Pas de retour. Jamais."
+    },
+    "es": {
+      "title": "Una comida. Para siempre.",
+      "description": "Sin vuelta atrás. Jamás."
+    },
+    "de": {
+      "title": "EIN Gericht. Für immer?",
+      "description": "Wähl weise. Kein Zurück!"
+    },
+    "ru": {
+      "title": "Одна еда. Навсегда.",
+      "description": "Без отмены. Выбери сейчас."
+    },
+    "hi": {
+      "title": "एक ही खाना? ज़िंदगी भर!",
+      "description": "कोई वापसी नहीं, पक्का?"
+    },
+    "id": {
+      "title": "Satu Makanan Seumur Hidup",
+      "description": "Tidak bisa ganti. Pilih!"
+    },
+    "tr": {
+      "title": "Sonsuza Kadar Tek Yemek",
+      "description": "Geri dönüş yok. Asla."
+    },
+    "th": {
+      "title": "อาหารเดียว ตลอดไป",
+      "description": "เลือกแล้ว ห้ามเปลี่ยน!"
+    },
+    "it": {
+      "title": "Un Solo Cibo? Per Sempre.",
+      "description": "Nessun ripensamento. Mai più."
+    },
+    "pl": {
+      "title": "Jedno jedzenie. Na zawsze.",
+      "description": "Bez odwrotu. Wybierz mądrze."
+    },
+    "nl": {
+      "title": "Eén Eten. Voor Altijd.",
+      "description": "Geen weg terug. Ooit."
+    },
+    "bn": {
+      "title": "এক খাবার। সারাজীবন।",
+      "description": "কোনো ফিরে আসার সুযোগ নেই।"
+    },
+    "pt": {
+      "title": "Uma Comida. Pra Sempre.",
+      "description": "Sem volta. Nunca mais."
+    },
+    "ar": {
+      "title": "طعام واحد للأبد؟",
+      "description": "لا رجعة فيه! أبداً!"
+    },
+    "vi": {
+      "title": "Món Ăn Cả Đời!",
+      "description": "Chọn rồi, không đổi!"
+    },
+    "zh": {
+      "title": "一种食物,永远",
+      "description": "不能后悔哦。"
+    }
+  },
+  "tournament-useless-talent": {
+    "en": {
+      "title": "Dumbest Flex Ever",
+      "description": "Totally useless. Totally iconic."
+    },
+    "ko": {
+      "title": "쓸모없는 재능",
+      "description": "완전 무쓸모. 완전 쩔어."
+    },
+    "ja": {
+      "title": "無駄すぎる才能",
+      "description": "マジで無駄。でも最高！"
+    },
+    "fr": {
+      "title": "Talent Inutile",
+      "description": "Zéro utilité. Super stylé."
+    },
+    "es": {
+      "title": "El talento más absurdo",
+      "description": "Inútil total. Icónico también."
+    },
+    "de": {
+      "title": "Dein nutzloses Talent?",
+      "description": "Kein Zweck, aber Kult!"
+    },
+    "ru": {
+      "title": "Самый глупый флекс",
+      "description": "Бесполезно. Но очень круто!"
+    },
+    "hi": {
+      "title": "सबसे बेकार टैलेंट?",
+      "description": "बेकार पर कूल, है ना?"
+    },
+    "id": {
+      "title": "Bakat Paling Gak Guna",
+      "description": "Gak guna tapi keren!"
+    },
+    "tr": {
+      "title": "En Gereksiz Yetenek Hangisi?",
+      "description": "İşe yaramaz ama efsane!"
+    },
+    "th": {
+      "title": "โคตรไร้ประโยชน์!",
+      "description": "แต่ฮาโคตรๆ!"
+    },
+    "it": {
+      "title": "Talento Inutile? Iconico!",
+      "description": "Totalmente inutile. Assolutamente iconico."
+    },
+    "pl": {
+      "title": "Najgłupszy talent? Masz?",
+      "description": "Bezużyteczny, ale kultowy. Wybierz."
+    },
+    "nl": {
+      "title": "Meest Nutloze Talent?",
+      "description": "Totaal nutteloos. Totaal iconisch."
+    },
+    "bn": {
+      "title": "সবচেয়ে অদ্ভুত প্রতিভা",
+      "description": "একেবারে বেকার। তবু নজরকাড়া।"
+    },
+    "pt": {
+      "title": "Talento Mais Inútil!",
+      "description": "Totalmente inútil. Totalmente icônico."
+    },
+    "ar": {
+      "title": "أغرب موهبة على الإطلاق؟",
+      "description": "عديمة الفائدة؟ لكنها أسطورية!"
+    },
+    "vi": {
+      "title": "Tài Lẻ Vô Dụng!",
+      "description": "Vô dụng mà chất lừ!"
+    },
+    "zh": {
+      "title": "最没用的绝活",
+      "description": "毫无用处,超级经典。"
+    }
+  },
+  "versus-coke-pepsi": {
+    "en": {
+      "title": "Coke or Pepsi?",
+      "description": "Pick a side. For life."
+    },
+    "ko": {
+      "title": "펩시 vs 콜라",
+      "description": "평생 선택은?"
+    },
+    "ja": {
+      "title": "コーク？ペプシ？",
+      "description": "どっちか選べ！永遠に。"
+    },
+    "fr": {
+      "title": "Coke ou Pepsi?",
+      "description": "Choisis ton camp. Pour la vie."
+    },
+    "es": {
+      "title": "¿Coca o Pepsi?",
+      "description": "Elige tu bando. Para siempre."
+    },
+    "de": {
+      "title": "Coke oder Pepsi?",
+      "description": "Wähl deine Seite. Fürs Leben!"
+    },
+    "ru": {
+      "title": "Кола или Пепси?",
+      "description": "Выбери сторону. Навсегда."
+    },
+    "hi": {
+      "title": "कोक या पेप्सी?",
+      "description": "अपना पक्ष चुनो, लाइफटाइम!"
+    },
+    "id": {
+      "title": "Coke atau Pepsi?",
+      "description": "Pilih timmu. Seumur hidup!"
+    },
+    "tr": {
+      "title": "Kola mı, Pepsi mi?",
+      "description": "Tarafını seç. Hayat boyu!"
+    },
+    "th": {
+      "title": "โค้กหรือเป๊ปซี่?",
+      "description": "เลือกข้างไปเลย!"
+    },
+    "it": {
+      "title": "Coca o Pepsi?",
+      "description": "Da che parte stai? Per sempre."
+    },
+    "pl": {
+      "title": "Cola czy Pepsi? Która?",
+      "description": "Wybierz stronę. Na zawsze."
+    },
+    "nl": {
+      "title": "Cola of Pepsi?",
+      "description": "Kies een kant. Voor altijd."
+    },
+    "bn": {
+      "title": "কোক নাকি পেপসি?",
+      "description": "একটা পক্ষ নিন। সারাজীবনের জন্য।"
+    },
+    "pt": {
+      "title": "Coca ou Pepsi?",
+      "description": "Escolha um lado. Pra vida."
+    },
+    "ar": {
+      "title": "كوكا أم بيبسي؟",
+      "description": "اختر فريقك مدى الحياة!"
+    },
+    "vi": {
+      "title": "Coke Hay Pepsi?",
+      "description": "Chọn phe. Cả đời!"
+    },
+    "zh": {
+      "title": "可口还是百事?",
+      "description": "一辈子只选一边。"
+    }
+  },
+  "poll-best-pizza-topping": {
+    "en": {
+      "title": "The One True Topping",
+      "description": "Your pizza deal-breaker."
+    },
+    "ko": {
+      "title": "진짜 토핑은?",
+      "description": "피자 결정타!"
+    },
+    "ja": {
+      "title": "ピザの最強トッピング",
+      "description": "譲れないのは？"
+    },
+    "fr": {
+      "title": "Garniture Pizza Reine",
+      "description": "Ton choix décisif."
+    },
+    "es": {
+      "title": "El topping definitivo",
+      "description": "Lo que define tu pizza."
+    },
+    "de": {
+      "title": "DAS Pizza-Topping?",
+      "description": "Ohne das geht GAR NIX!"
+    },
+    "ru": {
+      "title": "Та самая начинка",
+      "description": "Либо она, либо нет."
+    },
+    "hi": {
+      "title": "असली पिज़्ज़ा टॉपिंग?",
+      "description": "तुम्हारा पिज़्ज़ा डील-ब्रेकर!"
+    },
+    "id": {
+      "title": "Topping Pizza Terbaik?",
+      "description": "Penentu rasa pizza-mu!"
+    },
+    "tr": {
+      "title": "Tek Gerçek Pizza Üstü",
+      "description": "Pizzanı bozan ya da yapan."
+    },
+    "th": {
+      "title": "หน้าพิซซ่าในตำนาน",
+      "description": "เลือกผิดชีวิตเปลี่ยน!"
+    },
+    "it": {
+      "title": "Il Topping Definitivo",
+      "description": "Rovina o salva la pizza?"
+    },
+    "pl": {
+      "title": "Idealny dodatek do pizzy?",
+      "description": "Decyzja, która łamie serca."
+    },
+    "nl": {
+      "title": "De Ultieme Pizza Topping",
+      "description": "Jouw pizza deal-breaker?"
+    },
+    "bn": {
+      "title": "সেরা পিৎজা টপিং?",
+      "description": "আপনার পিৎজার মরণ-বাঁচন!"
+    },
+    "pt": {
+      "title": "A Única Cobertura Certa!",
+      "description": "Seu limite pra pizza."
+    },
+    "ar": {
+      "title": "ملك إضافات البيتزا؟",
+      "description": "مستحيل تتنازل عنه! اختر!"
+    },
+    "vi": {
+      "title": "Topping Pizza Chân Ái?",
+      "description": "Quyết định cả chiếc bánh!"
+    },
+    "zh": {
+      "title": "唯一真配料",
+      "description": "披萨的生死线。"
+    }
+  },
+  "ranking-seasons": {
+    "en": {
+      "title": "Rank the Seasons",
+      "description": "Drag. Reveal your truth."
+    },
+    "ko": {
+      "title": "계절 순위",
+      "description": "진짜 순위를 매겨봐."
+    },
+    "ja": {
+      "title": "季節ランキング",
+      "description": "ドラッグ！本音を見せろ。"
+    },
+    "fr": {
+      "title": "Classe les Saisons",
+      "description": "Glisse. Révèle ton classement."
+    },
+    "es": {
+      "title": "Ordena las estaciones",
+      "description": "Arrastra. Muestra tu verdad."
+    },
+    "de": {
+      "title": "Rank deine Jahreszeiten!",
+      "description": "Zieh sie. Zeig deine Wahrheit!"
+    },
+    "ru": {
+      "title": "Оцени времена года",
+      "description": "Перетащи. Открой свою правду."
+    },
+    "hi": {
+      "title": "सीज़न को रैंक करो!",
+      "description": "अपना सच सामने लाओ."
+    },
+    "id": {
+      "title": "Urutkan Musim Favoritmu",
+      "description": "Geser. Ungkap seleramu!"
+    },
+    "tr": {
+      "title": "Mevsimleri Sırala!",
+      "description": "Sürükle. Gerçeği ortaya çıkar."
+    },
+    "th": {
+      "title": "จัดอันดับฤดูไหนดี?",
+      "description": "ลากเลย! เปิดเผยความจริง!"
+    },
+    "it": {
+      "title": "Classifica le Stagioni",
+      "description": "Trascina. La tua verità."
+    },
+    "pl": {
+      "title": "Ustaw pory roku!",
+      "description": "Przeciągnij. Odkryj prawdę."
+    },
+    "nl": {
+      "title": "Rangschik de Seizoenen",
+      "description": "Sleep en onthul de waarheid."
+    },
+    "bn": {
+      "title": "ঋতুগুলো র‍্যাঙ্ক করুন",
+      "description": "টেনে সাজান। সত্যিটা বলুন।"
+    },
+    "pt": {
+      "title": "Classifique as Estações!",
+      "description": "Arraste. Mostre sua verdade."
+    },
+    "ar": {
+      "title": "رتب الفصول الآن!",
+      "description": "اسحب واكشف حقيقتك!"
+    },
+    "vi": {
+      "title": "Xếp Hạng 4 Mùa!",
+      "description": "Kéo thả. Nói thật đi!"
+    },
+    "zh": {
+      "title": "给四季排名",
+      "description": "拖拽揭晓你的真心。"
+    }
+  },
+  "tier-list-breakfast": {
+    "en": {
+      "title": "Breakfast Tier List",
+      "description": "S tier or trash?"
+    },
+    "ko": {
+      "title": "아침 티어 리스트",
+      "description": "S급? 아니면 쓰레기?"
+    },
+    "ja": {
+      "title": "朝食トップランク",
+      "description": "Sか？ゴミか？"
+    },
+    "fr": {
+      "title": "Breakfast Tier List",
+      "description": "Meilleur ou nul?"
+    },
+    "es": {
+      "title": "Tier list de desayunos",
+      "description": "¿Élite o basura?"
+    },
+    "de": {
+      "title": "Frühstücks-Tier-List?",
+      "description": "S-Tier oder Müllhaufen?"
+    },
+    "ru": {
+      "title": "Завтрак: Тир-лист",
+      "description": "Топ или мусор?"
+    },
+    "hi": {
+      "title": "ब्रेकफास्ट टियर लिस्ट",
+      "description": "S-टियर या कचरा?"
+    },
+    "id": {
+      "title": "Tier List Sarapan!",
+      "description": "S tier atau ampas?"
+    },
+    "tr": {
+      "title": "Kahvaltı Tier Listesi",
+      "description": "S seviyesi mi, çöp mü?"
+    },
+    "th": {
+      "title": "จัดอันดับมื้อเช้า",
+      "description": "S-Tier หรือทิ้ง?"
+    },
+    "it": {
+      "title": "Colazione: La Tier List",
+      "description": "S-tier o spazzatura?"
+    },
+    "pl": {
+      "title": "Śniadaniowy ranking. Twój wybór!",
+      "description": "S-klasa czy do kosza?"
+    },
+    "nl": {
+      "title": "Ontbijt Tier Lijst",
+      "description": "S-tier of toch prut?"
+    },
+    "bn": {
+      "title": "ব্রেকফাস্ট টিয়ার লিস্ট",
+      "description": "এস-টিয়ার নাকি বাদ?"
+    },
+    "pt": {
+      "title": "Tier List do Café!",
+      "description": "S tier ou lixo?"
+    },
+    "ar": {
+      "title": "قائمة فطورك النهائية!",
+      "description": "فئة S أم سلة المهملات؟"
+    },
+    "vi": {
+      "title": "Tier List Bữa Sáng!",
+      "description": "Hạng S hay rác?"
+    },
+    "zh": {
+      "title": "早餐分级榜",
+      "description": "S级还是垃圾?"
+    }
+  },
+  "rate-aesthetic-rooms": {
+    "en": {
+      "title": "Rate the Vibes",
+      "description": "1-5 stars. Zero mercy."
+    },
+    "ko": {
+      "title": "방 분위기 평가",
+      "description": "솔직하게 매겨봐."
+    },
+    "ja": {
+      "title": "部屋のセンス評価",
+      "description": "星5つで！容赦なし。"
+    },
+    "fr": {
+      "title": "Note les Chambres",
+      "description": "1-5 étoiles. Sans pitié."
+    },
+    "es": {
+      "title": "Califica las vibras",
+      "description": "1 a 5 estrellas. Sin piedad."
+    },
+    "de": {
+      "title": "Bewerte die Vibes!",
+      "description": "1-5 Sterne. Gnadenlos!"
+    },
+    "ru": {
+      "title": "Оцени вайбы комнат",
+      "description": "От 1 до 5. Без жалости."
+    },
+    "hi": {
+      "title": "वाइब्स को रेट करो!",
+      "description": "1-5 स्टार, कोई दया नहीं!"
+    },
+    "id": {
+      "title": "Nilai Vibe Kamar Ini!",
+      "description": "1-5 bintang. Gas!"
+    },
+    "tr": {
+      "title": "Ortamın Havasını Oyla",
+      "description": "1-5 yıldız. Acıma yok."
+    },
+    "th": {
+      "title": "ให้คะแนนห้องสุดปัง",
+      "description": "1-5 ดาว ห้ามใจอ่อน!"
+    },
+    "it": {
+      "title": "Vota l'Estetica",
+      "description": "1-5 stelle. Senza pietà."
+    },
+    "pl": {
+      "title": "Oceń te wnętrza!",
+      "description": "1-5 gwiazdek. Bez litości!"
+    },
+    "nl": {
+      "title": "Beoordeel de Sfeer",
+      "description": "1-5 sterren. Geen genade."
+    },
+    "bn": {
+      "title": "ঘরগুলোর ভাইব রেট করুন",
+      "description": "১-৫ স্টার। কোনো দয়া নয়।"
+    },
+    "pt": {
+      "title": "Avalie as Vibes!",
+      "description": "1-5 estrelas. Sem dó!"
+    },
+    "ar": {
+      "title": "قيم الأجواء الآن!",
+      "description": "من 1-5 نجوم! بلا رحمة!"
+    },
+    "vi": {
+      "title": "Chấm Điểm Vibe!",
+      "description": "1-5 sao. Không nương tay!"
+    },
+    "zh": {
+      "title": "给氛围打分",
+      "description": "1-5星,毫不留情。"
+    }
+  },
+  "would-you-rather-hard-choices": {
+    "en": {
+      "title": "Impossible Choices",
+      "description": "You have to pick. Sorry."
+    },
+    "ko": {
+      "title": "고르기 힘든 선택",
+      "description": "둘 중 하나는 꼭!"
+    },
+    "ja": {
+      "title": "究極の選択",
+      "description": "選ぶしかない！ごめん。"
+    },
+    "fr": {
+      "title": "Choix Impossibles",
+      "description": "Tu dois choisir. Désolé."
+    },
+    "es": {
+      "title": "Decisiones imposibles",
+      "description": "Debes elegir. Lo siento."
+    },
+    "de": {
+      "title": "Unmögliche Entscheidungen!",
+      "description": "Du MUSST wählen. Sorry!"
+    },
+    "ru": {
+      "title": "Невозможный выбор",
+      "description": "Придется выбрать. Извини."
+    },
+    "hi": {
+      "title": "नामुमकिन चुनाव!",
+      "description": "चुनना पड़ेगा, सॉरी!"
+    },
+    "id": {
+      "title": "Pilihan Tersulit!",
+      "description": "Wajib pilih. Maaf ya."
+    },
+    "tr": {
+      "title": "İmkansız Seçimler!",
+      "description": "Seçmek zorundasın. Üzgünüm."
+    },
+    "th": {
+      "title": "เลือกยากสุดๆ!",
+      "description": "คุณต้องเลือก ห้ามหนี!"
+    },
+    "it": {
+      "title": "Scelte Impossibili",
+      "description": "Devi scegliere. Nessuna scusa."
+    },
+    "pl": {
+      "title": "Niemożliwe wybory. Dasz radę?",
+      "description": "Musisz wybrać. Przykro mi."
+    },
+    "nl": {
+      "title": "Onmogelijke Keuzes",
+      "description": "Je móét kiezen. Sorry."
+    },
+    "bn": {
+      "title": "অসম্ভব সব পছন্দ",
+      "description": "বাছতেই হবে। কোনো উপায় নেই।"
+    },
+    "pt": {
+      "title": "Escolhas Impossíveis!",
+      "description": "Você tem que escolher. Desculpa."
+    },
+    "ar": {
+      "title": "خيارات مستحيلة تنتظرك!",
+      "description": "يجب أن تختار! آسف!"
+    },
+    "vi": {
+      "title": "Chọn Khó Đỡ!",
+      "description": "Phải chọn. Xin lỗi nhé!"
+    },
+    "zh": {
+      "title": "不可能的选择",
+      "description": "必须选,抱歉。"
+    }
+  },
+  "matching-capital-country": {
+    "en": {
+      "title": "Capital Match",
+      "description": "Think you know the world?"
+    },
+    "ko": {
+      "title": "수도 맞추기",
+      "description": "세계 지리 자신 있니?"
+    },
+    "ja": {
+      "title": "首都当てクイズ",
+      "description": "世界を知ってる？"
+    },
+    "fr": {
+      "title": "Capitale vs Pays",
+      "description": "Tu connais le monde?"
+    },
+    "es": {
+      "title": "Capitales a juego",
+      "description": "¿Crees conocer el mundo?"
+    },
+    "de": {
+      "title": "Hauptstadt-Match!",
+      "description": "Kennst du die Welt?"
+    },
+    "ru": {
+      "title": "Ты знаешь столицы?",
+      "description": "Проверь свои знания мира."
+    },
+    "hi": {
+      "title": "राजधानी मैच!",
+      "description": "दुनिया जानते हो क्या?"
+    },
+    "id": {
+      "title": "Cocokkan Ibu Kota!",
+      "description": "Yakin kenal dunia?"
+    },
+    "tr": {
+      "title": "Başkent Eşleştirme!",
+      "description": "Dünyayı bildiğini mi sanıyorsun?"
+    },
+    "th": {
+      "title": "ทายเมืองหลวง",
+      "description": "คุณรู้โลกดีแค่ไหน?"
+    },
+    "it": {
+      "title": "Abbina Capitali",
+      "description": "Conosci davvero il mondo?"
+    },
+    "pl": {
+      "title": "Stolica do kraju. Zgadniesz?",
+      "description": "Wiesz wszystko o świecie?"
+    },
+    "nl": {
+      "title": "Hoofdstad Match",
+      "description": "Ken jij de wereld?"
+    },
+    "bn": {
+      "title": "রাজধানী মেলান",
+      "description": "বিশ্বকে চেনেন নাকি?"
+    },
+    "pt": {
+      "title": "Combine as Capitais!",
+      "description": "Acha que conhece o mundo?"
+    },
+    "ar": {
+      "title": "طابق العواصم الآن!",
+      "description": "هل تعرف العالم حقاً؟"
+    },
+    "vi": {
+      "title": "Ghép Thủ Đô!",
+      "description": "Biết thế giới không?"
+    },
+    "zh": {
+      "title": "首都配对",
+      "description": "你真的懂世界吗?"
+    }
+  }
+}

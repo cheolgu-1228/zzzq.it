@@ -2,8 +2,8 @@
 
 // 메인 페이지 — 프로필 입력 (국가/성별/연령대/닉네임) 후 /contents로 이동
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
-import { COUNTRIES, getCountry } from "@/src/lib/countries";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { COUNTRIES, getCountry, type Country } from "@/src/lib/countries";
 import { saveProfile, loadProfile, type UserProfile } from "@/src/lib/profile";
 import { detectCountry } from "@/src/lib/geo";
 import { useT } from "@/src/components/LocaleProvider";
@@ -114,26 +114,13 @@ export default function HomePage() {
               </span>
             )}
           </div>
-          <select
+          <CountryDropdown
             value={country}
-            onChange={(e) => setCountry(e.target.value)}
-            className="h-11 px-3 rounded-[var(--radius-sm)] text-base"
-            style={{
-              background: "var(--bg-soft)",
-              color: "var(--fg)",
-              border: "1px solid var(--card-border)",
-            }}
-          >
-            <option value="" disabled>
-              {t("home.selectCountry")}
-            </option>
-            {orderedCountries.map((c, idx) => (
-              <option key={c.code} value={c.code}>
-                {idx === 0 && detected ? "📍 " : ""}
-                {c.flag} {c.name}
-              </option>
-            ))}
-          </select>
+            onChange={setCountry}
+            options={orderedCountries}
+            detectedCode={detected}
+            placeholder={t("home.selectCountry")}
+          />
         </label>
 
         {/* 성별 */}
@@ -208,6 +195,185 @@ export default function HomePage() {
       </section>
 
       <AdSlot slot="8365869931" />
+    </div>
+  );
+}
+
+// ====== 국가 선택 드롭다운 (네이티브 select 대체) ======
+// - 검색 가능, 스크롤 고정, 뷰포트 벗어나지 않음
+// - 플로팅 패널은 max-height: min(60dvh, 360px) + overflow-y-auto
+function CountryDropdown({
+  value,
+  onChange,
+  options,
+  detectedCode,
+  placeholder,
+}: {
+  value: string;
+  onChange: (code: string) => void;
+  options: Country[];
+  detectedCode: string | null;
+  placeholder: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const ref = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+
+  // 바깥 클릭 / Escape 닫기
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  // 열릴 때 검색창에 포커스
+  useEffect(() => {
+    if (open) {
+      setQuery("");
+      setTimeout(() => searchRef.current?.focus(), 10);
+    }
+  }, [open]);
+
+  const selected = value ? getCountry(value) : null;
+
+  const filtered = useMemo(() => {
+    if (!query.trim()) return options;
+    const q = query.trim().toLowerCase();
+    return options.filter(
+      (c) =>
+        c.name.toLowerCase().includes(q) ||
+        c.code.toLowerCase().includes(q),
+    );
+  }, [options, query]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className="w-full h-11 px-3 flex items-center justify-between gap-2 text-base text-left"
+        style={{
+          background: "var(--bg-soft)",
+          color: selected ? "var(--fg)" : "var(--fg-muted)",
+          border: "1px solid var(--card-border)",
+          borderRadius: "var(--radius-sm)",
+        }}
+      >
+        <span className="truncate">
+          {selected ? (
+            <>
+              <span aria-hidden>{selected.flag}</span> {selected.name}
+            </>
+          ) : (
+            placeholder
+          )}
+        </span>
+        <span
+          className="text-xs shrink-0"
+          style={{ color: "var(--fg-muted)" }}
+          aria-hidden
+        >
+          ▾
+        </span>
+      </button>
+
+      {open && (
+        <div
+          className="absolute left-0 right-0 mt-2 z-50 flex flex-col"
+          style={{
+            background: "var(--card)",
+            border: "1px solid var(--card-border)",
+            borderRadius: "var(--radius-sm)",
+            boxShadow: "var(--shadow)",
+            maxHeight: "min(60dvh, 360px)",
+          }}
+        >
+          {/* 검색창 */}
+          <div
+            className="p-2 shrink-0"
+            style={{ borderBottom: "1px solid var(--card-border)" }}
+          >
+            <input
+              ref={searchRef}
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search country..."
+              className="w-full h-9 px-3 text-sm"
+              style={{
+                background: "var(--bg-soft)",
+                color: "var(--fg)",
+                border: "1px solid var(--card-border)",
+                borderRadius: "var(--radius-sm)",
+              }}
+            />
+          </div>
+
+          {/* 스크롤 가능한 리스트 */}
+          <ul
+            role="listbox"
+            className="flex-1 min-h-0 overflow-y-auto overscroll-contain py-1"
+          >
+            {filtered.length === 0 ? (
+              <li
+                className="px-3 py-3 text-sm text-center"
+                style={{ color: "var(--fg-muted)" }}
+              >
+                No match
+              </li>
+            ) : (
+              filtered.map((c) => {
+                const active = c.code === value;
+                const isDetected = c.code === detectedCode;
+                return (
+                  <li key={c.code}>
+                    <button
+                      type="button"
+                      role="option"
+                      aria-selected={active}
+                      onClick={() => {
+                        onChange(c.code);
+                        setOpen(false);
+                      }}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left transition-colors"
+                      style={{
+                        background: active ? "var(--bg-soft)" : "transparent",
+                        color: active ? "var(--accent)" : "var(--fg)",
+                        fontWeight: active ? 700 : 500,
+                      }}
+                    >
+                      <span aria-hidden>{c.flag}</span>
+                      <span className="flex-1 truncate">{c.name}</span>
+                      {isDetected && (
+                        <span
+                          className="text-[10px] font-bold"
+                          style={{ color: "var(--accent)" }}
+                          aria-label="Detected"
+                        >
+                          📍
+                        </span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })
+            )}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

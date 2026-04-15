@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "Vota, scegli, scopri come ha scelto il mondo."
+  },
+  "nav": {
+    "home": "Home",
+    "contents": "Contenuti"
+  },
+  "theme": {
+    "cute": "Carino",
+    "digital": "Digitale",
+    "gaming": "Gaming"
+  },
+  "home": {
+    "title": "Prima di iniziare",
+    "subtitle": "Dicci qualcosa su di te per personalizzare i risultati.",
+    "country": "Paese",
+    "gender": "Genere",
+    "age": "Fascia d'età",
+    "nickname": "Soprannome",
+    "nicknamePlaceholder": "es. zzzQ",
+    "start": "Inizia",
+    "selectCountry": "Seleziona il paese"
+  },
+  "gender": {
+    "male": "Uomo",
+    "female": "Donna",
+    "other": "Altro"
+  },
+  "age": {
+    "10s": "Adolescenti",
+    "20s": "20-29",
+    "30s": "30-39",
+    "40s": "40-49",
+    "50s+": "50+"
+  },
+  "contents": {
+    "title": "Contenuti",
+    "join": "Partecipa",
+    "results": "Risultati"
+  },
+  "tournament": {
+    "round16": "Ottavi di finale",
+    "quarter": "Quarti di finale",
+    "semi": "Semifinali",
+    "final": "Finale",
+    "pickOne": "Scegline uno",
+    "winner": "Vincitore",
+    "playAgain": "Gioca ancora",
+    "viewResults": "Vedi i risultati globali",
+    "progress": "Sfida"
+  },
+  "results": {
+    "title": "Risultati Globali",
+    "totalVotes": "Voti totali",
+    "topPick": "Scelta migliore",
+    "byCountry": "Per paese",
+    "byRound": "Percentuale di vittorie per turno",
+    "recent": "Voti recenti",
+    "comments": "Commenti",
+    "writeComment": "Scrivi un commento...",
+    "send": "Invia",
+    "empty": "Ancora nessun dato. Sii il primo!"
+  }
+}

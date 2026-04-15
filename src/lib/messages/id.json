@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "Pilih, vote, lihat pilihan dunia."
+  },
+  "nav": {
+    "home": "Beranda",
+    "contents": "Konten"
+  },
+  "theme": {
+    "cute": "Lucu",
+    "digital": "Digital",
+    "gaming": "Gaming"
+  },
+  "home": {
+    "title": "Sebelum mulai",
+    "subtitle": "Ceritain dikit tentang kamu biar hasilnya pas.",
+    "country": "Negara",
+    "gender": "Gender",
+    "age": "Kelompok umur",
+    "nickname": "Nama panggilan",
+    "nicknamePlaceholder": "mis. zzzQ",
+    "start": "Mulai",
+    "selectCountry": "Pilih negara"
+  },
+  "gender": {
+    "male": "Laki-laki",
+    "female": "Perempuan",
+    "other": "Lainnya"
+  },
+  "age": {
+    "10s": "Remaja",
+    "20s": "20-an",
+    "30s": "30-an",
+    "40s": "40-an",
+    "50s+": "50+"
+  },
+  "contents": {
+    "title": "Konten",
+    "join": "Gabung",
+    "results": "Hasil"
+  },
+  "tournament": {
+    "round16": "Babak 16 Besar",
+    "quarter": "Perempatfinal",
+    "semi": "Semifinal",
+    "final": "Final",
+    "pickOne": "Pilih satu",
+    "winner": "Pemenang",
+    "playAgain": "Main lagi",
+    "viewResults": "Lihat hasil global",
+    "progress": "Pertandingan"
+  },
+  "results": {
+    "title": "Hasil Global",
+    "totalVotes": "Total suara",
+    "topPick": "Pilihan teratas",
+    "byCountry": "Berdasarkan negara",
+    "byRound": "Tingkat kemenangan per babak",
+    "recent": "Suara terbaru",
+    "comments": "Komentar",
+    "writeComment": "Tulis komentar...",
+    "send": "Kirim",
+    "empty": "Belum ada data. Jadilah yang pertama!"
+  }
+}

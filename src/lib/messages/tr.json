@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "Seç, oy ver, dünya nasıl seçmiş gör."
+  },
+  "nav": {
+    "home": "Anasayfa",
+    "contents": "İçerikler"
+  },
+  "theme": {
+    "cute": "Şirin",
+    "digital": "Dijital",
+    "gaming": "Oyun"
+  },
+  "home": {
+    "title": "Başlamadan önce",
+    "subtitle": "Sonuçları sana özel hale getirmek için bize biraz kendinden bahset.",
+    "country": "Ülke",
+    "gender": "Cinsiyet",
+    "age": "Yaş grubu",
+    "nickname": "Takma ad",
+    "nicknamePlaceholder": "ör. zzzQ",
+    "start": "Başla",
+    "selectCountry": "Ülke seç"
+  },
+  "gender": {
+    "male": "Erkek",
+    "female": "Kadın",
+    "other": "Diğer"
+  },
+  "age": {
+    "10s": "10'lar",
+    "20s": "20'ler",
+    "30s": "30'lar",
+    "40s": "40'lar",
+    "50s+": "50'ler+"
+  },
+  "contents": {
+    "title": "İçerikler",
+    "join": "Katıl",
+    "results": "Sonuçlar"
+  },
+  "tournament": {
+    "round16": "Son 16 Turu",
+    "quarter": "Çeyrek Final",
+    "semi": "Yarı Final",
+    "final": "Final",
+    "pickOne": "Birini seç",
+    "winner": "Kazanan",
+    "playAgain": "Tekrar Oyna",
+    "viewResults": "Dünya geneli sonuçları gör",
+    "progress": "Eşleşme"
+  },
+  "results": {
+    "title": "Dünya Geneli Sonuçlar",
+    "totalVotes": "Toplam oy",
+    "topPick": "En Popüler Seçim",
+    "byCountry": "Ülkeye Göre",
+    "byRound": "Tura Göre Kazanma Oranı",
+    "recent": "Son Oylar",
+    "comments": "Yorumlar",
+    "writeComment": "Yorum yaz...",
+    "send": "Gönder",
+    "empty": "Henüz veri yok. İlk sen ol!"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "Stem, kies, zie hoe de wereld koos."
+  },
+  "nav": {
+    "home": "Home",
+    "contents": "Polls"
+  },
+  "theme": {
+    "cute": "Schattig",
+    "digital": "Digitaal",
+    "gaming": "Gaming"
+  },
+  "home": {
+    "title": "Voordat we beginnen",
+    "subtitle": "Vertel ons wat over jezelf om de resultaten te personaliseren.",
+    "country": "Land",
+    "gender": "Geslacht",
+    "age": "Leeftijdsgroep",
+    "nickname": "Bijnaam",
+    "nicknamePlaceholder": "bv. zzzQ",
+    "start": "Start",
+    "selectCountry": "Selecteer land"
+  },
+  "gender": {
+    "male": "Man",
+    "female": "Vrouw",
+    "other": "Anders"
+  },
+  "age": {
+    "10s": "Tieners",
+    "20s": "20-ers",
+    "30s": "30-ers",
+    "40s": "40-ers",
+    "50s+": "50+"
+  },
+  "contents": {
+    "title": "Polls",
+    "join": "Doe mee",
+    "results": "Resultaten"
+  },
+  "tournament": {
+    "round16": "Achtste finales",
+    "quarter": "Kwartfinales",
+    "semi": "Halve finales",
+    "final": "Finale",
+    "pickOne": "Kies één",
+    "winner": "Winnaar",
+    "playAgain": "Speel opnieuw",
+    "viewResults": "Bekijk globale resultaten",
+    "progress": "Potje"
+  },
+  "results": {
+    "title": "Globale Resultaten",
+    "totalVotes": "Totaal stemmen",
+    "topPick": "Populairste keuze",
+    "byCountry": "Per land",
+    "byRound": "Winstpercentage per ronde",
+    "recent": "Recente stemmen",
+    "comments": "Reacties",
+    "writeComment": "Schrijf een reactie...",
+    "send": "Verzenden",
+    "empty": "Nog geen data. Wees de eerste!"
+  }
+}

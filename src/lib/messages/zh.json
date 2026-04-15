@@ -1,0 +1,66 @@
+{
+  "app": {
+    "name": "zzzQ.it",
+    "tagline": "选一个，投一票，看看大家怎么说。"
+  },
+  "nav": {
+    "home": "首页",
+    "contents": "内容"
+  },
+  "theme": {
+    "cute": "可爱",
+    "digital": "数码",
+    "gaming": "游戏"
+  },
+  "home": {
+    "title": "开始之前",
+    "subtitle": "告诉我们一些你的信息，帮你定制结果。",
+    "country": "国家",
+    "gender": "性别",
+    "age": "年龄段",
+    "nickname": "昵称",
+    "nicknamePlaceholder": "例如 zzzQ",
+    "start": "开始",
+    "selectCountry": "选择国家"
+  },
+  "gender": {
+    "male": "男",
+    "female": "女",
+    "other": "其他"
+  },
+  "age": {
+    "10s": "青少年",
+    "20s": "20多岁",
+    "30s": "30多岁",
+    "40s": "40多岁",
+    "50s+": "50岁+"
+  },
+  "contents": {
+    "title": "内容",
+    "join": "加入",
+    "results": "结果"
+  },
+  "tournament": {
+    "round16": "16强",
+    "quarter": "8强",
+    "semi": "4强",
+    "final": "决赛",
+    "pickOne": "选一个",
+    "winner": "获胜者",
+    "playAgain": "再玩一次",
+    "viewResults": "看全球结果",
+    "progress": "对战"
+  },
+  "results": {
+    "title": "全球结果",
+    "totalVotes": "总票数",
+    "topPick": "最受欢迎",
+    "byCountry": "各国数据",
+    "byRound": "各轮胜率",
+    "recent": "最新投票",
+    "comments": "评论",
+    "writeComment": "写条评论吧...",
+    "send": "发送",
+    "empty": "还没数据哦。快来做第一个！"
+  }
+}

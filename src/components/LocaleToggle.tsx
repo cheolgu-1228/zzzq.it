@@ -29,7 +29,7 @@ export function LocaleToggle() {
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="h-9 px-2.5 flex items-center gap-1.5 text-sm font-semibold"
+        className="h-7 px-2 flex items-center gap-1 text-xs font-semibold"
         style={{
           background: "var(--bg-soft)",
           color: "var(--fg)",
@@ -51,12 +51,14 @@ export function LocaleToggle() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 mt-2 min-w-[150px] py-1 z-50"
+          className="absolute right-0 mt-2 min-w-[140px] py-1 z-50 overflow-y-auto overscroll-contain"
           style={{
             background: "var(--card)",
             border: "1px solid var(--card-border)",
             borderRadius: "var(--radius-sm)",
             boxShadow: "var(--shadow)",
+            // 19개 로케일 → 뷰포트 기준 최대 높이 제한 (70% 축소)
+            maxHeight: "min(42dvh, 252px)",
           }}
         >
           {LOCALES.map((l) => {
@@ -72,7 +74,7 @@ export function LocaleToggle() {
                     setLocale(l as Locale);
                     setOpen(false);
                   }}
-                  className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left transition-colors"
+                  className="w-full flex items-center gap-1.5 px-2.5 py-1.5 text-xs text-left transition-colors"
                   style={{
                     background: active ? "var(--bg-soft)" : "transparent",
                     color: active ? "var(--accent)" : "var(--fg)",
